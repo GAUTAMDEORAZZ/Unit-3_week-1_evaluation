@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #show_products{
+      margin-top: 30px;
+      height: 50px;
+      background-color: rgb(208, 49, 49);
+      border-radius: 10px;
+      border: 0px;
+      
+    }
+    #show_products>a{
+      text-decoration: none;
+      color:white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 30px 20px 30px 20px;
+    }
+    h2{
+      text-align: center;
+      color: rgb(34, 73, 73);
+      font-weight: bold;
+    }
+
+    #products{
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      width: 30%;
+      margin: auto;
+
+
+    }
+    #products>input{
+      display: block;
+      margin: auto;
+      height: 20px;
+      margin-top: 10px;
+     border-radius: 10px;
+     width: 60%;
+    }
+    #products>#add_product{
+      width: 40%;
+      height: 30px;
+      color: rgb(55, 8, 8);
+      background-color: aqua;
+      border: 0px;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 20px;
+
+
+    }
+    </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+      <button id="show_products"><a href="inventory.html">Show Products</a></button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      <form id="products">
+        <input type="text" name="type" id="type" placeholder="Enter Type of product">
+        <input type="text" name="desc" id="desc" placeholder="To describe about the product">
+        <input type="text" name="price" id="price" placeholder="Enter the price of product">
+        <input type="text" name="image" id="image" placeholder="Enter product image Url link">
+        <input type="submit" id="add_product" value="Add Product">
+      </form>
+
+
+     
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
